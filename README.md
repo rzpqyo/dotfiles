@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-dotfiles in local environment
+dotfiles in local environment.
