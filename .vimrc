@@ -1,3 +1,4 @@
+set nocompatible
 set number
 set title
 set ruler
@@ -7,4 +8,7 @@ set laststatus=2
 set hlsearch
 set autoindent
 set tabstop=4
-
+"set <xUp>=OA
+"set <xDown>=OB
+"set <xRight>=OC
+"set <xLeft>=OD
