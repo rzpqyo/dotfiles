@@ -1,3 +1,6 @@
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 set nocompatible
 set number
 set title
@@ -6,8 +9,9 @@ set showcmd
 set showmatch
 set laststatus=2
 set hlsearch
+set incsearch
 set autoindent
-set tabstop=4
+set tabstop=2
 "set <xUp>=OA
 "set <xDown>=OB
 "set <xRight>=OC
