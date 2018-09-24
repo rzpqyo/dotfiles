@@ -11,6 +11,7 @@ set laststatus=2
 set hlsearch
 set incsearch
 set autoindent
+set expandtab
 set tabstop=2
 "set <xUp>=OA
 "set <xDown>=OB
