@@ -127,4 +127,5 @@ function figr() {
 }
 alias cpdown='cp -p `ls -1trd ~/Downloads/*|tail -n 1` .'
 alias lsdown='ls -ltr ~/Downloads/|tail'
+export PATH=$PATH:~/.local/bin
 
