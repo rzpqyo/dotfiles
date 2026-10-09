@@ -57,8 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -117,7 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-eval `dircolors ~/.dircolors`
 function mkcd() {
   mkdir $1
   cd $1
@@ -129,3 +127,5 @@ alias cpdown='cp -p `ls -1trd ~/Downloads/*|tail -n 1` .'
 alias lsdown='ls -ltr ~/Downloads/|tail'
 export PATH=$PATH:~/.local/bin
 
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+export PATH=$JAVA_HOME/bin:$PATH

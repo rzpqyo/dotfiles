@@ -13,7 +13,8 @@ set incsearch
 set autoindent
 set expandtab
 set tabstop=2
-"set <xUp>=OA
-"set <xDown>=OB
-"set <xRight>=OC
-"set <xLeft>=OD
+"set <xUp>=␛OA
+"set <xDown>=␛OB
+"set <xRight>=␛OC
+"set <xLeft>=␛OD
+set mouse=
